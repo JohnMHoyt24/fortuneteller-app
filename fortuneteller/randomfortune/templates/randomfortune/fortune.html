@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Django Fortune Teller</title>
+ <style>
+    body{
+      text-align: center;
+      background-color: #0ABCE8;
+      color: #ffffff;
+      font-family: "Cooper";
+    }
+
+    .fortune{
+      font-size: 22px;
+    }
+
+    .fortButton{
+      background-color: #81D349;
+      font-family: "Cooper";
+      font-size: 16px;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+ 
+ <h1>Here is your fortune:</h1>
+ 
+ <!--This will serve as a placeholder for the fortune, referring to the context variable in views.fortune().-->
+ <p class="fortune">{{ fortune }}</p>
+ <input type="button" class="fortButton" value="Get Fortune!" onClick="location.href=location.href">
+</body>
+</html>
